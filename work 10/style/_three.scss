@@ -1,0 +1,57 @@
+.flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.flexbox1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .l1 {
+    width: 390px;
+
+    span {
+      color: #4285f4;
+    }
+
+    button {
+      padding: 10px 30px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: #ec5863;
+      font-size: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .flexbox1 {
+    .r1 {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flexbox {
+    img {
+      width: 100%;
+    }
+  }
+  .flexbox1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .flexbox1 {
+    .l1 {
+      width: 100%;
+    }
+  }
+}
